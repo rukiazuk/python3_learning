@@ -19,7 +19,7 @@ new_minutes = time_to_minutes % 60
 new_hour = int(((time_to_minutes - new_minutes) / 60) % 24 )
 
 
-# print the result in HH:MM string
+# print the result in 0..23:0..59 string
 print(str(new_hour) + ":" + str(new_minutes))
 
 
@@ -28,7 +28,7 @@ print(str(new_hour) + ":" + str(new_minutes))
 # 17
 # 59
 
-# Expected output: 13:16
+# Expected output: 0...23:
 
 
 # Sample input:
